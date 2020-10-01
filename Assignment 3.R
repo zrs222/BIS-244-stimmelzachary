@@ -34,4 +34,4 @@ p + geom_point() +
        title= "COVID-19 Cases in Lehigh County, PA",
        subtitle= "Points are incremental new confirmed cases",
        caption= "Source: NY Times")
-
+#Assignment 3 complete
