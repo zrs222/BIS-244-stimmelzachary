@@ -12,7 +12,7 @@ library(socviz)
 #organizing data
 Group7 <- c("Canada", "France", "Germany", "Italy", "Japan", 
              "United_States_of_America", "United Kingdom")
-Group7_countries <- covid_info [covid_info$countriesAndTerritories %in% Group7,]
+Group7_countries <- covid_info [covid_info$countriesAndTerritories %in% Group7]
 #Creating graph
 p <- ggplot(data = Group7_countries ,
             mapping = aes(x=day, y= cases, color=countriesAndTerritories))
