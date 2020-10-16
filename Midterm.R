@@ -13,6 +13,8 @@ library(socviz)
 Group7 <- c("Canada", "France", "Germany", "Italy", "Japan", 
              "United_States_of_America", "United Kingdom")
 Group7_countries <- covid_info [covid_info$countriesAndTerritories %in% Group7]
+
+
 #Creating graph
 p <- ggplot(data = Group7_countries ,
             mapping = aes(x=day, y= cases, color=countriesAndTerritories))
@@ -21,3 +23,4 @@ labs(title = "Group 7 Covid-19 Case Counts", x = "", y= "New Cases per Day",
      subtitle = "by Zach Stimmel as of 2020-10-16",
      caption= "Data:ECDC Times") +
   scale_x_continuous(labels = c("Jan", "Apr", "Jul", "Oct"))
+#End
